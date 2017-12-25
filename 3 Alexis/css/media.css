@@ -1,0 +1,1051 @@
+@media (min-width: 1200px) and (max-width: 1600px) {
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	h2 {
+	font-size: 4.5rem; 
+	}
+
+	h3 {
+		font-size: 2.5rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+	}
+
+	.boldText {
+		font: 500 1.9rem 'Poppins', sans-serif;
+	}
+
+	.smallText {
+		font: 400 1.4rem 'Poppins', sans-serif;
+	}
+	
+	.wrapper {
+		width: 970px;
+		margin: 0 auto;
+	}
+
+	section .wrapper {
+    	padding-top: 110px;
+ 	    padding-bottom: 110px;
+	}
+
+	nav {
+		font-size: 1.4rem;
+	}
+
+	/* ****************Section main********************* */
+	#sect-main h1 {
+		font-size: 5rem;
+	}
+
+	.icon-container {
+    	font-size: 1.7rem;
+	}
+
+	.button {
+	    font-size: 1.5rem;
+	    padding: 18px 35px;	
+	}
+
+	/* ****************Section one********************* */
+	.about-us-white {
+		padding: 75px 60px;
+		margin-left: -75px;
+		margin-top: 90px;
+	}
+
+	.section-number-one, .section-number {
+		font-size: 26rem;
+	}	
+
+	.border {
+	    bottom: 210px;
+	    right: 39px;
+	}    
+
+	/* ****************Section two********************* */
+	.services-wrapper, .team-wrapper {
+		width: 100%;
+	}
+
+	.services, .team {
+		width: 30%;
+		margin-right: 0;
+	}
+
+	.web, .founder {
+		float: left;
+	}
+
+	.photograhy, .designer {
+		float: right;
+	}
+
+	.ux, .lead { 
+		margin: 45px;
+		margin-top: 0;
+		
+	}
+
+	.services-wrapper .development, .team-wrapper .consultant {
+		float: none;
+		clear: both;
+		margin: 0 auto;
+	}
+
+	/* ****************Section four********************* */
+	.bennet {
+		padding: 60px 82px;
+	}
+
+	.bennet-connect {
+		padding-left: 85px;
+	}
+
+	/* ****************Section six********************* */
+	.price {
+		width: 30%;
+		padding: 30px 53px;
+	}
+
+	.button-green a, .button-purple a {
+		padding: 17px 34px;
+	}	
+
+	/* ****************Section seven********************* */
+	.citata-block {
+		width: 57%;
+		margin-top: 40px;
+	}
+
+	.author {
+		margin: 20px 0 10px 0;
+	}
+
+	/* ****************Section eight********************* */
+	.reason-2 .reason-descr {
+    	margin: 32px 0;
+	}
+
+	.journey-start p {
+    	font-size: 2rem;
+		margin-top: 50px;
+	}
+
+	.reasons {
+		width: 33.3%;
+		margin-top: 30px;
+		padding-left: 50px;
+	}
+
+
+	/* ****************Section nine********************* */
+
+	.blog-right {
+    	width: 41%;
+	}
+
+	.blog-left {
+		width: 56%;
+	}
+	
+	.blog-right div {
+    	padding: 28px 32px;
+	}
+
+	/* ****************Section-subscribe********************* */
+
+	.field {
+    	font-size: 1.5rem;
+	}
+
+	 input, .btn-subscribe {
+	 	padding: 15px 18px;
+	 }
+
+
+	 /* ****************Section-ten********************* */
+	
+	 #section-ten .btn-message {
+    	font-size: 1.5rem;
+	}
+
+	 /* ****************Footer********************* */
+
+	 footer {
+	 	margin-top: 110px;
+	 }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	h2 {
+		font-size: 4rem; 
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+	}
+
+	.boldText {
+		font: 500 1.6rem 'Poppins', sans-serif;
+	}
+
+	.smallText {
+		font: 400 1.2rem 'Poppins', sans-serif;
+	}
+	
+	.wrapper {
+		width: 750px;
+		margin: 0 auto;
+	}
+
+	section .wrapper {
+    	padding-top: 70px;
+ 	    padding-bottom: 70px;
+	}
+
+	section h2+p {
+    	margin: 30px auto 60px auto;
+	}
+
+	nav {
+		font-size: 1.2rem;
+	}
+
+	/* ****************Section main********************* */
+	#sect-main h1 {
+		font-size: 5rem;
+	}
+
+	.nav-items li {
+		padding-right: 10px;
+	}
+
+	.icon-container {
+    	font-size: 1.5rem;
+	}
+
+	.button {
+	    font-size: 1.4rem;
+    	padding: 16px 27px;	
+	}
+
+	.our-work {
+ 	   padding: 60px 0 80px 0;
+	}
+
+	/* ****************Section one********************* */
+	.about-us-grey {
+		width: 54%;
+	}
+	
+	.border {
+		width: 57.5%; 
+	}
+	
+	.about-us-white {
+		width: 58%;
+		padding: 55px 60px;
+		margin-left: -95px;
+		margin-top: 85px;
+	}
+
+	.about-us-white h2+p {
+		margin: 30px auto;
+	}
+
+	.section-number-one, .section-number {
+		font-size: 24rem;
+		line-height: 0.3;
+	}	
+
+	.section-number-one {
+		top: 77px;
+	}
+
+	.border {
+	    bottom: 155px;
+	    right: 10px;
+	}    
+
+	/* ****************Section two********************* */
+	.services-wrapper, .team-wrapper {
+		width: 100%;
+	}
+
+	.services, .team {
+		width: 48%;
+		margin-right: 0;
+	}
+
+	.services {
+		margin-bottom: 24px;
+	}
+
+	.web, .photograhy {
+		float: left;
+	}
+
+	.ux, .development {
+		float: right;
+	}
+
+	video {
+  		width: 50%;
+  		margin: 55px auto 40px auto;
+	}
+
+	/* ****************Section three********************* */
+	#section-three img {
+		width: 46%;
+		margin-bottom: 25px;
+	}
+
+	#section-three .odd {
+		float: left;
+	}
+
+	#section-three .even {
+		float: right;
+	}
+
+	#section-three .last-img {
+		float: none;
+		margin: 0 auto;
+	}
+
+	/* 	****************Section four********************* */
+
+	.team {
+		width: 38%;
+		margin-bottom: 70px; 
+	}	
+
+	.founder, .designer {
+		float: left;
+		margin-left: 40px;
+	}
+
+	.lead, .consultant {
+		float: right;
+		margin-right: 40px;
+	}
+
+	.team:last-child {
+    	margin-right: 40px;
+	}
+
+	.bennet {
+		padding: 45px 64px;
+		margin-top: 0;
+	}
+
+	.bennet-connect {
+		padding-left: 40px;
+		width: 18%;
+	} 
+
+	.bennet-socials {
+    	width: 23%;
+	}
+
+	/* 	****************Section five********************* */
+	.steps {
+	    width: 41.35%;
+	    padding: 25px 44px 45px 43px;
+	}
+
+	.steps::before {
+ 	    top: 5px;
+    	left: -35px;
+    	font-size: 4rem;
+	}
+
+	.steps-header {
+    	font-size: 2.3rem;
+    	padding-bottom: 20px;
+    }	
+
+    .step-1 {
+    	top: 290px;
+	}
+
+	.step-2 {
+    	top: 590px;
+	}
+
+	.step-3 {
+	    bottom: 455px;
+	}
+
+	.step-4 {
+    	bottom: 180px;
+	}
+
+	/* ****************Section six********************* */
+	
+	.price-container {
+		width: 100%;
+	}
+
+	.price {
+		width: 46%;
+		padding: 30px 53px;
+		margin-bottom: 55px;
+	}
+
+	.starter {
+		float: left;
+		margin-right: 0;
+	}
+
+	.ultimate {
+		float: right;
+		margin-right: 0;
+	}
+
+	.professional {
+		float: none;
+		margin: 0 auto;
+		clear: both;
+	}
+
+	/* ****************Section seven********************* */
+	#section-seven img {
+		width: 51.2%;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.citata-block {
+		width: 100%;
+		margin: 70px auto 0 auto;
+	}
+
+	.author {
+		margin: 20px 0 10px 0;
+	}
+
+	/* ****************Section eight********************* */
+	.reasons {
+		width: 48%;
+		margin-top: 20px;
+		padding-left: 50px;
+	}
+
+	.reason-1, .reason-3, .reason-5 {
+		float: left;
+	}
+
+	.reason-2, .reason-2, .reason-6 {
+		float: right;
+	}
+
+	.reason-2 .reason-descr {
+    	margin: 35px 0;
+	}
+
+	.reason-6 .reason-header {
+    	margin: -71px 0 30px 50px;
+	}
+
+	.reason-6 {
+		margin-top: 0;
+	}
+
+	.reason-descr {
+    	padding: 33px 0;
+	}
+
+	.journey-start p {
+    	font-size: 2rem;
+	}
+
+	.journey-start {
+		clear: both;
+	}
+
+	/* ****************Section nine********************* */
+	.blog-img {
+		height: 443px;
+		padding: 380px 0 0 50px;
+	}
+
+	.blog-left {
+		width: 74%;
+		float: none;
+    	margin: 0 auto 30px auto;
+	}
+
+	.blog-right {
+		width: 100%;
+		text-align: center;
+	}
+
+	.blog-right div {
+		width: 47.6%;
+		padding: 32px 35px;
+		text-align: left;
+	}
+
+	.blog-green {
+		float: left;
+		margin-bottom: 30px;
+	}
+
+	.blog-purple {
+		float: right;
+		margin-bottom: 30px;
+	}
+
+	.blog-orange {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.blog-red {
+		padding: 35px 40px;
+	}
+
+	.date {
+		font-size: 1.2rem;
+	}
+
+	/* ****************Section-subscribe********************* */
+	.form-subscribe {
+    	width: 59%;
+	}
+
+	.field {
+    	font-size: 1.5rem;
+	}
+
+	 input  {
+	 	padding: 12px 18px;
+	 }
+
+	 .btn-subscribe {
+	 	padding: 13px 18px;
+	 }
+
+	 /* ****************Section-ten********************* */
+	
+	.form-wrapper {
+    	width: 75%;
+	}
+
+	#section-ten .btn-message {
+		width: 30%;
+		padding: 25px 0;
+		font-size: 1.4rem;
+	}
+
+	/* ****************Footer********************* */
+	 footer {
+	 	margin-top: 90px;
+	 }
+
+	 .footer-1 {
+    	padding-left: 15px;
+	}
+
+	.footer-4 {
+    	padding-right: 15px;
+	}
+
+}	
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+	
+	.wrapper {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	h2 {
+		font-size: 3rem; 
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.3rem;
+	}
+
+	.boldText {
+		font: 500 1.5rem 'Poppins', sans-serif;
+	}
+
+	.smallText {
+		font: 400 1.3rem 'Poppins', sans-serif;
+	}
+	
+	section .wrapper {
+    	padding-top: 35px;
+ 	    padding-bottom: 35px;
+	}
+
+	section h2+p {
+    	margin: 20px auto 35px auto;
+	}
+
+
+	/* ****************Navigation-menu********************* */
+	nav {
+		padding-top: 0;
+		text-align: center;
+	}
+
+	.logo, nav {
+		width: 100%;
+		float: none;
+	}
+
+	.logo img {
+		margin: 0 auto;
+	}
+
+	.mobile-menu {
+		display: inline;
+		font: 500 1.8rem 'Poppins', sans-serif;
+	}
+
+	.nav-items li {
+    	display: block;
+    	padding-right: 0;
+    	margin-top: 6px;
+    }
+
+    /* *************Menu button************** */
+
+	.nav-items {
+		float: none;
+		padding: 0;
+		display: none;
+		margin: 0;
+	}
+
+	 .menu .mobile-menu::before { 
+	  	content: '▶ ';
+	  	font-size: 1.8rem;
+	  	color: #000;
+	  	cursor: pointer;
+	}
+
+	.menu.open .mobile-menu::before { 
+	  	content: '▼ ';
+	  	cursor: pointer;
+	}
+
+	.mobile-menu { 
+		cursor: pointer;
+	}
+
+	.menu.open ul { 
+	  	display: block;
+	}
+
+	/* ****************Section main********************* */
+	#sect-main h1 {
+		font-size: 3.4rem;
+	}
+
+	.icon-container {
+		width: 100%;
+		margin: 0 auto;
+    	font-size: 1.4rem;
+	}
+
+	.icon-container:nth-child(2) {
+		padding: 35px 0 35px 0;
+	}
+
+	.icon-container img {
+    	padding-bottom: 20px;
+	}
+
+	.button {
+	    font-size: 1.2rem;
+    	padding: 15px 20px;	
+	}
+
+	.our-work {
+ 	   padding: 60px 0 65px 0;
+	}
+
+	/* ****************Section one********************* */
+	.about-us-grey {
+		display: none;
+	}
+	
+	.border {
+		width: 100%; 
+	}
+	
+	.about-us-white {
+		width: 100%;
+		padding: 30px 25px;
+		margin: 0 auto;
+	}
+
+	.about-us-white h2+p {
+		margin: 30px auto;
+	}
+
+	.section-number-one {
+		font-size: 15rem;
+		line-height: 0;
+	}	
+
+	.section-number {
+		font-size: 10rem;
+		line-height: 0.2;
+	}
+
+	.section-number-one {
+		top: 67px;
+	}
+
+	.border {
+	    display: none;
+	}    
+
+	/* ****************Section two********************* */
+	.services-wrapper, .team-wrapper, .services {
+		width: 100%;
+	}
+
+	.services {
+		float: none;
+	}
+
+	.services {
+		margin-bottom: 24px;
+		padding: 50px 25px;
+	}
+
+	.services:last-child {
+		margin-bottom: 0;
+	}
+
+	video {
+  		width: 95%;
+  		margin: 25px auto;
+	}
+
+	/* ****************Section three********************* */
+	#section-three img {
+		width: 100%;
+		margin: 0 auto 15px auto;
+	}
+
+	#section-three .last-img {
+		margin-bottom: 0;
+	}
+
+	/* 	****************Section four********************* */
+
+	.team {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 25px; 
+	}	
+
+	.bennet {
+		margin: 0 auto 25px auto;
+		padding: 30px 17px;
+	}
+
+	.bennet-text {
+		width: 100%;
+		margin: 0;
+	}
+
+	.bennet-connect {
+		padding-left: 25px;
+		width: 18%;
+		border-right: none;
+	} 
+
+	.bennet-socials {
+    	width: 60%;
+    	padding-left: 45px;
+	}
+
+	/* ****************Section coffee********************* */
+	#coffee {
+		background-position-x: 27%;
+	}
+
+	.success .projects {
+		margin-top: 20px;
+	}
+	
+	.success div {
+		width: 100%;
+		float: none;
+		margin: 0 auto 40px auto;
+	}
+
+	.success div img:last-child {
+		display: none;
+	}
+
+	.success .releases {
+		margin-bottom: 0;
+	}
+
+	/* 	****************Section five********************* */
+	.steps {
+	    width: 100%;
+	    position: static;
+	    padding: 16px 32px 40px 55px;
+	    margin-top: 20px;
+	}
+
+	#section-five h2+p {
+    	margin-bottom: 35px;
+	}
+
+	.steps::before {
+	    position: relative;
+	    top: 20px;
+	    left: -39px;
+	    font: 700 4rem/0 'Libre Baskerville', serif;
+	}
+
+	.steps-header {
+    	font: 400 2.2rem 'Poppins', sans-serif;
+    	padding-bottom: 15px;
+	    text-align: right;
+	}
+
+	.steps-header+p {
+		text-align: right;
+	}
+
+	#section-five img {
+		width: 100%;
+	}
+
+	/* ****************Section six********************* */
+
+	.price {
+		width: 100%;
+		padding: 30px 40px;
+		margin-bottom: 30px;
+		float: none;
+	}
+
+	.professional {
+		margin-bottom: 0;
+	}
+
+	.button-green a, .button-purple a {
+		padding: 15px 20px;
+	} 
+
+	.button-wrapper {
+    	padding: 30px 0 30px 0;
+	}
+
+	.per-month {
+		margin: 15px auto;
+	}
+
+	/* ****************Section seven********************* */
+	#section-seven img {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.citata-block {
+		width: 100%;
+		margin: 30px auto 0 auto;
+		padding: 20px 40px;
+	}
+
+	.citata-block::before {
+		font-size: 23rem;
+		top: 123px;
+	}
+
+	.citata-block::after {
+		font-size: 23rem;
+		bottom: -32px;
+		right: 3px;
+	}
+
+	.author {
+		margin: 20px 0 10px 0;
+	}
+
+	/* ****************Section eight********************* */
+	.reasons {
+		width: 100%;
+		margin-top: 10px;
+		padding: 0 10px;
+		text-align: justify;
+	}
+
+	.reason-descr {
+	  	margin: 33px 0;
+	}
+
+	.reason-img {
+    	margin-left: 30px;
+	}
+
+	.reason-header {
+	    margin: -50px 0 30px 77px;
+	}
+
+	.reason-6 .reason-header {
+    	margin: -65px 0 30px 75px;
+	}
+	
+	.journey-start p {
+	   	font-size: 1.7rem;
+	   	padding: 0;
+	   	margin-bottom: 30px;
+	}
+
+	/* ****************Section nine********************* */
+	.blog-img {
+		background-position: center center;
+	}
+
+	.blog-left {
+		width: 100%;
+		float: none;
+    	margin: 0 auto 30px auto;
+	}
+
+	.blog-right {
+		width: 100%;
+		text-align: center;
+	}
+
+	.blog-right div {
+		width: 100%;
+		margin-bottom: 30px;
+		padding: 25px 35px;
+		text-align: left;
+	}
+
+	#section-nine .name {
+		font-size: 1.4rem;
+		margin: 0;
+	}
+
+	.blog-red {
+		padding: 25px 35px;
+	}
+
+	.blog-right .blog-orange {
+		margin-bottom: 0;
+	}
+
+	.date {
+		font-size: 1.1rem;
+	}
+
+	/* ****************Section-subscribe********************* */
+	.form-subscribe {
+    	width: 100%;
+	}
+
+	.field, .btn-subscribe {
+    	font-size: 1.2rem;
+	}
+
+	 input  {
+	 	padding: 12px 0 12px 12px;
+	 }
+
+	 .btn-subscribe {
+	 	padding: 12px 9px;
+	 }
+
+	 #section-subscribe h3 {
+    	padding-bottom: 25px;
+	}
+
+	/* ****************Section-ten********************* */	
+	.form-wrapper {
+    	width: 100%;
+	}
+
+	#section-ten input {
+		width: 100%;
+		margin-bottom: 15px;
+		text-align: left;
+		padding: 15px 20px;
+	}
+
+	#section-ten textarea {
+		text-align: left;
+		margin-bottom: 30px;
+		line-height: 0.7;
+	}
+
+	#section-ten .btn-message {
+    	width: 45%;
+    	padding: 25px 8px;
+    	font-size: 1.3em;
+    	text-align: center;
+	}
+
+	/* ****************Footer********************* */
+	footer {
+	 	margin-top: 40px;
+	 	padding: 25px 0;
+	 }
+
+	footer .footer-1, footer .footer-2, footer .footer-3, footer .footer-4 {
+		width: 100%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: none;
+		text-align: center;
+		height: auto;
+	}
+
+	.footer-1 img {
+		margin: 0 auto;
+	}
+
+	.color-text {
+		margin-bottom: 0;
+	}
+
+	.footer-4 {
+		padding: 0
+	}
+
+	.footer-4 .color-text {
+		margin-bottom: 20px;
+	}	
+}
