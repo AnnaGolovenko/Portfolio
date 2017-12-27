@@ -1,0 +1,238 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif; }
+
+a:hover, a:active, a:focus {
+  text-decoration: none; }
+
+.section-main button, .section-three button {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  padding: 21px 42px;
+  background: transparent;
+  border-radius: 0; }
+  .section-main button:hover, .section-three button:hover {
+    cursor: pointer; }
+  .section-main button a, .section-three button a {
+    color: #fff; }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .section-main button, .section-three button {
+      padding: 15px 30px; } }
+
+.section-main p {
+  font-size: 2rem;
+  font-weight: 400; }
+
+.section-three .section-top {
+  padding-top: 105px;
+  padding-bottom: 70px;
+  text-align: center; }
+  .section-three .section-top .italic {
+    font-size: 3rem;
+    font-style: italic; }
+  .section-three .section-top h2 {
+    font-size: 4.2rem;
+    font-weight: 700; }
+  .section-three .section-top p {
+    font-size: 2rem;
+    font-weight: 400; }
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    .section-three .section-top {
+      padding-top: 80px;
+      padding-bottom: 60px; } }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .section-three .section-top {
+      padding-top: 60px;
+      padding-bottom: 50px; } }
+
+.section-main {
+  background: url(../img/Sect_1/bg.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  /* **************Media (laptop) ******************/
+  /* **************Media (tablet) ******************/
+  /* **************Media (phone) ******************/ }
+  .section-main header .logo {
+    margin-top: 32px; }
+  .section-main ul {
+    margin-top: 50px;
+    margin-bottom: 55px; }
+  .section-main li {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .section-main li a {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 2rem; }
+  .section-main .iron-man {
+    width: 717px;
+    height: 756px;
+    position: absolute;
+    z-index: 5;
+    margin-top: 15px; }
+  .section-main h1 {
+    font-weight: 800;
+    font-size: 6rem; }
+    .section-main h1 span {
+      color: #eeb501;
+      font-size: 12rem; }
+  .section-main p {
+    margin-top: 35px; }
+  .section-main button {
+    margin-top: 80px;
+    margin-bottom: 100px; }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .section-main li {
+      padding-left: 10px;
+      padding-right: 10px; }
+      .section-main li a {
+        font-size: 1.8rem; }
+    .section-main .iron-man {
+      width: 717px;
+      height: 756px;
+      position: absolute;
+      z-index: 5;
+      margin-top: 15px; }
+    .section-main h1 {
+      font-size: 5rem; }
+      .section-main h1 span {
+        font-size: 10rem; } }
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    .section-main .logo img {
+      margin: 0 auto; }
+    .section-main ul {
+      margin-top: 50px;
+      margin-bottom: 55px; }
+    .section-main li {
+      padding-left: 10px;
+      padding-right: 10px; }
+      .section-main li a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.8rem; }
+    .section-main h1 {
+      font-size: 5rem; }
+      .section-main h1 span {
+        font-size: 6rem; }
+    .section-main button {
+      margin-top: 60px;
+      margin-bottom: 80px; } }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .section-main .logo img {
+      margin: 0 auto; }
+    .section-main .iron-man {
+      width: 90%;
+      margin: -25px auto 20px auto;
+      height: auto;
+      position: static; }
+    .section-main .over-iron {
+      position: relative;
+      z-index: 6;
+      text-align: center;
+      margin-top: -60px; }
+    .section-main ul {
+      margin-top: 20px;
+      margin-bottom: 25px; }
+    .section-main li {
+      padding: 10px; }
+      .section-main li a {
+        font-size: 1.6rem; }
+    .section-main h1 {
+      font-size: 5rem; }
+      .section-main h1 span {
+        font-size: 6rem; }
+    .section-main button {
+      margin-top: 40px;
+      margin-bottom: 50px; } }
+
+.section-two {
+  background: url(../img/Sect_2/bg.jpg) no-repeat;
+  background-size: cover;
+  color: #1e0404;
+  /* **************Media (laptop) ******************/
+  /* **************Media (tablet) ******************/
+  /* **************Media (phone) ******************/ }
+  .section-two .left {
+    margin-top: 185px; }
+    .section-two .left .yellow-bg {
+      font-size: 5rem;
+      font-weight: 800;
+      background-color: #eeb501;
+      padding-left: 10px;
+      padding-right: 15px;
+      color: #fff; }
+  .section-two .col-design {
+    padding-top: 70px;
+    padding-bottom: 35px; }
+    .section-two .col-design img {
+      margin: 0 auto 15px auto; }
+    .section-two .col-design .header-design {
+      font-size: 2.5rem;
+      font-weight: 700; }
+    .section-two .col-design .text-design {
+      font-size: 1.5rem;
+      font-weight: 400; }
+  .section-two .container-design {
+    margin-bottom: 95px; }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .section-two .left {
+      margin-top: 150px; } }
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    .section-two .left {
+      margin-top: 300px; }
+    .section-two .container-design {
+      margin-bottom: 60px; } }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .section-two .left {
+      margin-top: 85px; }
+      .section-two .left img {
+        margin: 0 auto; }
+      .section-two .left p {
+        text-align: center; }
+      .section-two .left .just-our {
+        margin-top: 0;
+        margin-bottom: 15px; }
+    .section-two .col-design {
+      padding-top: 40px;
+      padding-bottom: 25px; }
+    .section-two .container-design {
+      margin-bottom: 40px; } }
+
+.section-three {
+  background: url(../img/Sect_3/bg.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  /* **************Media (tablet) ******************/
+  /* **************Media (phone) ******************/ }
+  .section-three .image-1 {
+    height: 700px; }
+  .section-three .image-2, .section-three .image-3 {
+    height: 385px; }
+  .section-three .image-4 {
+    height: 300px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .section-three button {
+    margin: 45px auto 60px auto;
+    display: block; }
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    .section-three img {
+      height: auto; }
+    .section-three button {
+      margin-top: 60px;
+      margin-bottom: 80px; } }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .section-three img {
+      height: auto;
+      margin: 15px auto 0 auto; }
+    .section-three button {
+      margin-top: 40px;
+      margin-bottom: 50px; } }
+
+/*# sourceMappingURL=style.css.map */

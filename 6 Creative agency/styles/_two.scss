@@ -1,0 +1,80 @@
+.section-two {
+	background: url(../img/Sect_2/bg.jpg) no-repeat;
+	background-size: cover;
+	color: $brown;
+	.left {
+		margin-top: 185px;
+		.yellow-bg {
+			font: {
+				size: 5rem;
+				weight: 800;
+			}
+			background-color: $yellow;
+			@include paddingLR(10px, 15px);
+			color: $white;
+		}
+	}
+	.col-design {
+		@include paddingTB(70px, 35px);
+		img {
+			margin: 0 auto 15px auto;
+		}
+		.header-design {
+			font: {
+				size: 2.5rem;
+				weight: 700;
+			}
+		}
+		.text-design {
+			font: {
+				size: 1.5rem;
+				weight: 400;
+			}
+		}
+	}
+	.container-design {
+		margin-bottom: 95px;
+	}
+
+	/* **************Media (laptop) ******************/
+	@include laptop {
+		.left {
+		margin-top: 150px;
+		}
+	}	
+
+	/* **************Media (tablet) ******************/
+	@include tablet {
+		.left {
+			margin-top: 300px;
+		}
+
+		.container-design {
+			margin-bottom: 60px;
+		}
+	}
+
+	/* **************Media (phone) ******************/
+	@include phone {
+		.left {
+			margin-top: 85px;
+			img {
+				margin: 0 auto;
+			}
+			p {
+				text-align: center;
+			}
+			.just-our {
+				@include marginTB(0, 15px);
+			}	
+		}
+		.col-design {
+			@include paddingTB(40px, 25px);
+		}
+		.container-design {
+			margin-bottom: 40px;
+		}
+
+	}
+}	
+

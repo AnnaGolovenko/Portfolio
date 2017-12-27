@@ -1,0 +1,47 @@
+.section-three {
+	background: url(../img/Sect_3/bg.jpg) no-repeat center;
+	background-size: cover;
+	color: $white;
+	.section-top {
+		@extend %section-subheader;
+	}
+	.image-1 {
+		height: 700px;
+	}
+
+	.image-2, .image-3 {
+		height: 385px;
+	}
+
+	.image-4 {
+		height: 300px;
+		width: 100%;
+		@include marginTB(15px, 15px);
+	}
+	button {
+		@extend %button;
+		margin: 45px auto 60px auto;
+		display: block;
+	}
+
+	/* **************Media (tablet) ******************/
+	@include tablet {
+		img {
+			height: auto;
+		}
+		button {
+			@include marginTB(60px, 80px);
+		}
+	}
+
+	/* **************Media (phone) ******************/
+	@include phone {
+		img {
+			height: auto;
+			margin: 15px auto 0 auto;
+		}
+		button {
+			@include marginTB(40px, 50px);
+		}
+	}
+}	
