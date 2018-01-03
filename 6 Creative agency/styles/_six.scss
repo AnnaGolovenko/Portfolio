@@ -1,0 +1,85 @@
+.section-six {
+	background: url(../img/Sect_6/bg.jpg) no-repeat center;
+	background-size: cover;
+	color: $brown;
+	.section-top {
+		@extend %section-subheader;
+		span {
+			color: $yellow;
+		}
+	}
+	.img-container {
+		text-align: center;
+		height: 150px;
+		border: 1px solid #a3a3a3;	
+	}
+	.row-top {
+		.img-container {
+			border-top: none;
+		}
+		.img-container:first-child {
+			border-left: none;
+		} 
+		 .img-container:last-child {
+		 	border-right: none;
+		 }
+	}
+
+	.row-bottom {
+		margin-bottom: 6em;
+		.img-container {
+			padding-top: 3em;
+			border-bottom: none;
+		}
+		.img-container:first-child {
+			border-left: none;
+		} 
+		.img-container:last-child {
+		 	border-right: none;
+		 }
+	}
+
+	/* **************Media (tablet) ******************/
+	@include tablet {
+		.row-bottom {
+			.img-container {
+				padding: 1.5em;
+			}
+			.img-container:nth-child(2n+1) {
+				border-left: none;
+			}
+			.img-container:nth-child(2n) {
+				border-right: none;			
+			}
+		}
+		.row-top {
+			.img-container {
+				padding: 1.5em;
+			}
+			.img-container:nth-child(2n+1) {
+				border-left: none;
+			}
+			.img-container:nth-child(2n) {
+				border-right: none;			
+			}
+		}
+		
+	}
+
+	/* **************Media (phone) ******************/
+	@include phone {
+		.img-container {
+			border: none;
+		}
+		.row-top {
+			.img-container {
+				@include paddingTB(1em, 1em);
+			}
+		}
+		.row-bottom {
+			.img-container {
+				@include paddingTB(1em, 1em);
+			}
+		}
+	}
+}	

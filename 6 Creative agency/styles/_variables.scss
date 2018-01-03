@@ -1,0 +1,122 @@
+$white: #fff;
+$yellow: #eeb501;
+$brown: #1e0404;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+@mixin marginLR($marginL, $marginR) {
+ 	margin-left: $marginL;
+ 	margin-right: $marginR;
+ }
+
+ @mixin marginTB($marginT, $marginB) {
+ 	margin-top: $marginT;
+ 	margin-bottom: $marginB;
+ }
+
+ @mixin paddingLR($paddingL, $paddingR) {
+ 	padding-left: $paddingL;
+ 	padding-right: $paddingR;
+ } 
+
+ @mixin paddingTB($paddingT, $paddingB) {
+ 	padding-top: $paddingT;
+ 	padding-bottom: $paddingB;
+ } 
+
+@mixin laptop {
+	@media (min-width: 992px) and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: 769px) and (max-width: 991px) {
+		@content;
+	}
+}
+
+ @mixin phone {
+	@media (min-width: 320px) and (max-width: 768px) {
+		@content;
+	}
+}
+
+html, body {
+	font-size: 16px; 
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	@include laptop {
+		font-size: 15px;
+	}
+	@include tablet {
+		font-size: 15px;
+	}
+	@include phone {
+		font-size: 16px;
+	}
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+%button {
+	font: {
+		size: 1.25em;
+		weight: 700;
+		}
+	color: $white;
+	text-transform: uppercase;
+	border: 3px solid $white;
+	padding: 1em 2em;
+	background: transparent;
+	@include border-radius (0);
+	&:hover {
+		cursor: pointer;
+	}
+	a {
+		color: $white;
+	}
+}
+
+%text-normal {
+	font: {
+	size: 1.25em;
+	weight: 400;
+	}
+} 
+
+%section-subheader {
+	@include paddingTB(6.2em, 4.3em);
+	text-align: center;
+	.italic {
+		font: {
+			size: 1.8em;
+			style: italic;
+		}
+	}
+	h2 {
+		font: {
+			size: 2.55em;
+			weight: 700;
+		}
+	}
+	p {
+		font: {
+			size: 1.25em;
+			weight: 400;
+		}
+	}
+}	

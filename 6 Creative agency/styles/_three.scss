@@ -5,43 +5,32 @@
 	.section-top {
 		@extend %section-subheader;
 	}
-	.image-1 {
-		height: 700px;
-	}
-
-	.image-2, .image-3 {
-		height: 385px;
-	}
-
-	.image-4 {
-		height: 300px;
+	img {
 		width: 100%;
-		@include marginTB(15px, 15px);
 	}
-	button {
+	
+	.image-4 {
+		@include marginTB(0.95em, 0.95em);
+	}
+	.btn {
 		@extend %button;
-		margin: 45px auto 60px auto;
-		display: block;
+		margin: 2.8em auto 3.75em auto;
+		display: inline-block;
 	}
 
 	/* **************Media (tablet) ******************/
 	@include tablet {
 		img {
-			height: auto;
-		}
-		button {
-			@include marginTB(60px, 80px);
+			
+			margin: 0.95em auto 0 auto;
 		}
 	}
 
 	/* **************Media (phone) ******************/
 	@include phone {
 		img {
-			height: auto;
-			margin: 15px auto 0 auto;
-		}
-		button {
-			@include marginTB(40px, 50px);
+			
+			margin: 0.95em auto 0 auto;
 		}
 	}
 }	

@@ -1,0 +1,61 @@
+.section-seven {
+	footer {
+		.socials-container{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 3.5em;
+			.socials {
+				width: 57px;
+				height: 57px;
+				background-color: $yellow;
+				@include border-radius (50%);
+				@include marginLR(0.5em, 0.5em); 
+				display: inline-block;
+				font-size: 2em;
+				line-height: 1.7;
+				text-align: center;
+				a {
+					color: $white;
+				}
+			}
+		}
+		.contacts {
+			font-size: 1.25em;
+			text-align: center;
+			address{
+				text-align: center;
+			}
+			a {
+				color: $white;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.yellow-border {
+			height: 5px;
+			width: 100%;
+			background-color: $yellow;
+			@include marginTB(3.75em, 3.75em);
+		}
+		.copiright {
+			text-align: center;
+			font-size: 1.25em;
+			margin-bottom: 3em;
+		}	
+	}
+
+	/* **************Media (phone) ******************/
+	@include phone {
+		footer {
+			.socials-container{
+				.socials {
+					width: 50px;
+					height: 50px;
+					font-size: 1.6em;
+					@include marginLR(0.3em, 0.3em);
+				}
+			}
+		}		
+	}
+}

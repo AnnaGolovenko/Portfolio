@@ -1,0 +1,76 @@
+.section-four {
+	background: url(../img/Sect_4/bg.jpg) no-repeat center;
+	background-size: cover;
+	color: $brown;
+	.section-top {
+		@extend %section-subheader;
+		span {
+			color: $yellow;
+		}
+	}
+	img {
+		width:100%;
+		display: block;
+	}
+	.name {
+		font: {
+			size: 1.6em;
+			weight: 800;
+		}
+		text-align: center;
+		margin-top: 1.25em; 
+	}
+	.profession {
+		font: {
+			size: 1.4em;
+			weight: 400;
+		}
+		text-align: center;
+		margin-bottom: 5.2em;
+	}
+	.photo-two, .photo-four {
+		margin-top: -4.68em;
+	}
+
+	/* **************Media (laptop) ******************/
+	@include laptop {
+		img {
+			
+		}
+		.photo-two, .photo-four {
+			margin-top: 0;
+		}
+		.photo-three {
+			clear: left;
+		}
+	}
+
+	/* **************Media (tablet) ******************/
+	@include tablet {
+		img {
+			
+		}
+		.photo-two, .photo-four {
+			margin-top: 0;
+		}
+		.photo-three {
+			clear: left;
+		}
+		.profession {
+			margin-bottom: 4.2em;
+		}
+	}
+
+	/* **************Media (phone) ******************/
+	@include phone {
+		img {
+		
+		}
+		.photo-two, .photo-four {
+			margin-top: 0;
+		}
+		.profession {
+			margin-bottom: 3.2em;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+.section-seven {
+	background: url(../img/Sect_7/bg.jpg) no-repeat center;
+	background-size: cover;
+	color: $white;
+	.section-top {
+		@extend %section-subheader;
+		span {
+			color: $yellow;
+		}
+	}
+	.map {
+		iframe {
+			width: 100%;
+			margin-bottom: 4.6em;
+		}
+	}
+	h3 {
+		font: {
+			size: 1.8em;
+			weight:700;
+		}
+		text-align: center;
+	}
+	form {
+		@include marginTB(2.1em, 3.4em);
+		input {
+			@include border-radius (0); 
+			background-color: #2e2e2e;
+			border: none;
+			font-size: 1em;
+			color: $white;
+			height: 60px;
+			/* padding: 2em 1.5em; */
+			margin-bottom: 1.5em;
+		}
+		.btn {
+			@extend %button;
+			padding: 0.7em 2em;
+			height: 60px;
+			float: right;
+		}
+	}
+
+	/* **************Media (tablet) ***************** */
+	@include tablet {
+		form {
+			.btn-container {
+				text-align: center;
+				.btn {
+					float: none;
+				}	
+			}
+		}
+	}
+
+	/* **************Media (phone) ******************/
+	@include phone {
+		form {
+			.btn-container {
+				text-align: center;
+				.btn {
+					float: none;
+				}
+			}
+		}
+	}
+}	
