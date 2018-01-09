@@ -1,0 +1,15 @@
+.section-six {
+	background-color: $greyDark;
+	@extend %sectionSubheader;
+		.header {
+			color: $white;
+			text-align: center;
+		}
+		.descr {
+			color: $white;
+			text-align: center;
+			a {
+				color: $blue;
+			}
+		}
+}		

@@ -1,0 +1,20 @@
+.section-nine {
+	background-color: $greyDark3;
+	@extend %sectionSubheader;
+		.header {
+			color: $white;
+			text-align: center;
+			margin-bottom: 0;
+		}
+		.descr {
+			color: $greyLight;
+			text-align: center;
+			a {
+				color: $blue;
+			}
+		}
+		.author {
+			color: $brown;
+			text-align: center;
+		}
+}		

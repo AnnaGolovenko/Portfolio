@@ -1,0 +1,80 @@
+.section-four {
+	background: url(../img/Sect_four/bg.jpg) no-repeat center;
+	background-size: cover;
+	color: $white;
+	@extend %sectionSubheader;
+	.skills-container {
+		.progress-container{
+			width: 20%;
+			float: left;
+			margin-bottom: 4em;
+			@include paddingLR(0.5em, 0.5em);
+			.circle {
+				border: 3px solid $brown;
+				width: 170px;
+				height: 170px;
+				border-radius: 50%;
+				position: relative;
+				.progress-radial {
+					.progress-percentage {
+						position: absolute;
+						text-align: center;
+						margin-left: 40%;
+	  					line-height: 170px;
+	  					font-size: 1em;
+	  					font-family: 'Raleway', sans-serif;				
+					}
+				}
+			}
+			.skill-name {
+				margin-top: 1.8em;
+				padding-left: 2.5em;
+			}	
+		}
+	}
+
+	@include tablet {
+		.skills-container{
+			.progress-container {
+				margin-bottom: 3em;
+				width: 50%;
+				&:last-child {
+					width: 100%;
+					margin: 0 auto;
+					margin-bottom: 4em;
+					.circle {
+						margin: 0 auto;
+					}
+					.skill-name {
+						text-align: center;
+						padding-left: 0;
+					}
+				}
+				.circle {
+					margin: 0 auto;
+				}	
+				.skill-name {
+					text-align: center;
+					padding-left: 0;
+				}
+			}
+		}	
+	}
+
+	@include phone {
+		.skills-container{
+			.progress-container {
+				margin-bottom: 2em;
+				width: 100%;
+				.circle {
+					margin: 0 auto;
+				}
+				.skill-name {
+					text-align: center;
+					padding-left: 0;
+				}
+			}		
+		}
+	}
+}	
+						

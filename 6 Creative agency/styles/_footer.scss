@@ -14,9 +14,7 @@
 				font-size: 2em;
 				line-height: 1.7;
 				text-align: center;
-				a {
-					color: $white;
-				}
+				color: $white;
 			}
 		}
 		.contacts {
@@ -45,6 +43,28 @@
 		}	
 	}
 
+	/* **************Media (laptop) ******************/
+	@include laptop {
+		footer {
+			.socials-container{
+				.socials {
+					line-height: 1.8;
+				}
+			}
+		}
+	}			
+
+	/* **************Media (tablet) ******************/
+	@include tablet {
+		footer {
+			.socials-container{
+				.socials {
+					line-height: 1.8;
+				}
+			}
+		}
+	}			
+
 	/* **************Media (phone) ******************/
 	@include phone {
 		footer {
@@ -53,6 +73,7 @@
 					width: 50px;
 					height: 50px;
 					font-size: 1.6em;
+					line-height: 1.9;
 					@include marginLR(0.3em, 0.3em);
 				}
 			}

@@ -1,0 +1,80 @@
+.header-sect {
+	background-color: $greyDark;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0,.2);
+	.logo-container {
+		.logo {
+			margin-top: 2.3em;
+		}
+	}
+	.list-menu {
+		font-size: 0.875em;
+		float: right;
+		border-bottom: none;
+		@include marginTB(2.85em, 1.80em);
+		.nav-item {
+			@include paddingLR (1.5em, 1.5em);
+			 .menu-item {
+			 	cursor: pointer;
+				color: $white;
+				@include borderBottom($greyDark, 100%);
+				background-color: $greyDark;
+				border: none;
+				&:hover {
+					@include borderBottom($brown, 100%);
+				}
+				&:active {
+					@include borderBottom($brown, 100%);
+				}
+				&:focus {
+					@include borderBottom($brown, 100%);
+				}
+			 }
+
+		}
+	}
+	
+	@include tablet {
+		position: static;
+		.logo {
+			@include marginLR(auto, auto);
+		}
+		.list-menu {
+			float: none;
+			text-align: center;
+			.nav-item {
+				@include paddingLR (2em, 1.5em);	
+			}
+		}
+	}		
+
+	@include phone {
+		position: static;
+		.logo {
+			@include marginLR(auto, auto);
+		}
+		.list-menu {
+			float: none;
+			text-align: center;
+			.nav-item {
+				display: inline-block;
+				width: 100%;
+				@include paddingTB (0, 0);
+				.menu-item {
+				&:hover {
+					@include borderBottom($brown, 25%);
+				}
+				&:active {
+					@include borderBottom($brown, 25%);
+				}
+				&:focus {
+					@include borderBottom($brown, 25%);
+				}
+
+				}
+			}
+		}		
+	}
+}

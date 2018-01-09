@@ -1,0 +1,21 @@
+.section-seven {
+	background-color: $white;
+	.photo-container {
+		.img-container {
+			width: 25%;
+			float: left;
+			@include tablet {
+				width: 50%;
+			}
+			@include phone {
+				display: none;
+			}
+		}
+		.btn-container {
+			@include marginTB (5.1em, 5.1em);
+			.btn {
+				@extend %button;
+			}
+		}	
+	}
+}				

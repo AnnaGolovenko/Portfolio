@@ -1,0 +1,58 @@
+.section-main {
+	background: url(../img/Sect_main/bg.jpg) no-repeat center;
+	background-size: cover;
+	color: $white;
+	p {
+		font-size: 1.5em;
+		margin-top: 11.8em;
+	}
+	h1 {
+		font-size: 4em;
+		.block {
+			display: block;
+			span {
+				color: $brown;
+			}
+		}		
+	}
+	.btn-container {
+		@include marginTB(4.3em, 11.5em);
+		.btn {
+			@extend %button;
+			border: 3px solid $brownDark;
+			background-color: $brownDark;
+			a {
+				color: $white;
+				i {
+					padding-left: 1em;
+				}
+			}
+		}	
+	}
+	
+	@include tablet {
+		p {
+			text-align: center;
+		}
+		h1 {
+			text-align: center;
+		}
+		.btn-container {
+			text-align: center;
+		}
+
+	}
+	@include phone {
+		p {
+			text-align: center;
+			margin-top: 4.8em;
+		}
+		h1 {
+			text-align: center;
+		}
+		.btn-container {
+			text-align: center;
+			margin-bottom: 6.8em;
+		}	
+	}
+}

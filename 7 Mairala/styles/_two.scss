@@ -1,0 +1,39 @@
+.section-two {
+	background-color: $greyLight2;
+	@extend %sectionSubheader;
+	.section-two__descr {
+		.header {
+			color: $brown;
+		}
+		.descr {
+			color: $greyDark;
+		}
+		.btn-container {
+			margin-bottom: 5.1em;
+			.btn {
+				@extend %button;
+			}
+		}	
+	}
+	@include tablet {
+		.section-two__descr {
+			.header {
+				text-align: center;
+			}
+			.btn-container {
+				text-align: center;
+			}
+		}
+	}
+
+	@include phone {
+		.section-two__descr {
+			.header {
+				text-align: center;
+			}
+			.btn-container {
+				text-align: center;
+			}
+		}	
+	}
+}

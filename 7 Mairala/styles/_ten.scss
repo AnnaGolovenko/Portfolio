@@ -1,0 +1,96 @@
+.section-ten {
+	background-color: $white;
+	.container {
+		text-align: center;
+		@extend %sectionHeader;
+		.blog-container {
+			.img-container {
+				position: relative;
+				.carousel-blog {
+					.blog-indicators {
+						position: absolute;
+						left: 50px;
+						bottom: 5px;
+						li {
+							background-color: $brown;
+							border-color: $brown;
+						}
+					}
+					.arrow {
+						color: $brown;
+					}
+				}
+			}
+			.content-container {
+				.line-img-left {
+					display: block;
+					float: left;
+					margin-right: 6em;
+				}
+				.date {
+					font-size: 1em;
+					color: $brown;
+				}
+				.article-header {
+					font-size: 1.5em;
+					color: $greyDark;
+					@include marginTB(1em, 1.25em);
+				}
+				.content {
+					font-size: 1em;
+					color: $greyLight;
+					line-height: 30px;
+					.continue {
+						color: $greyDark;
+						text-decoration: underline;
+					}
+				}
+			}
+		}		
+			.btn-container {
+				text-align: center;
+				margin-bottom: 5.6em;
+				.btn-post {
+					display: inline-block;
+					width: 92px;
+					height: 92px;
+					border-radius: 50%;
+					background-color: $brown;
+					border: 8px solid $greyLight;
+					color: $white;
+					font-size: 0.875em;
+					line-height: 75px;
+					margin-left: 7em;
+					@include laptop {
+						margin-left: 6em;
+					}
+					@include tablet {
+						margin-left: 5em;
+					}
+					@include phone {
+						margin: 3em auto 0 auto;
+					}
+				}
+			}
+		}
+		@include phone {
+			.blog-container {
+				text-align: center;
+				margin-top: 1em;
+				.content-container {
+				.date {
+					text-align: center;
+					margin-top: 2em;
+				}
+				.article-header {
+					text-align: center;
+					@include marginTB(1em, 1.25em);
+				}
+				.content {
+					text-align: center;
+				}
+			}
+		}
+	}
+				
+}

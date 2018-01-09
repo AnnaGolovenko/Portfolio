@@ -1,0 +1,61 @@
+.section-eight {
+	background-color: $greyLight2;
+	.container {
+		text-align: center;
+		@extend %sectionHeader;
+		.team-container {
+			.photo-container {
+				position: relative;
+				.photo {
+					margin: 0 auto;
+					width: 100%;
+					height: 100%;
+				}
+				.overlay {
+					display: none;
+				}
+			}	
+			.info {
+				color: $black;
+				border: 2px solid $greyLight3;
+				@include marginTB(1.56em, 5.6em);
+				@include paddingTB(1.56em, 1.56em);
+				.name {
+					font-size: 1.5em;
+					text-transform: uppercase;
+					@include marginTB(0, 0);
+				}
+				.prof {
+					font-size: 0.875em;
+					text-transform: uppercase;
+					@include marginTB(0, 0);
+				}
+			}	
+		&:hover {
+			.overlay {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.7);
+				.socials {
+					width: 55px;
+					height: 55px;
+					border-radius: 50%;
+					border: 2px solid $white;
+					@include marginTB(5.37em, 5.37em);
+					color: $white;
+					font-size: 1.8em;
+					line-height: 55px;
+					display: block;
+				}
+			}
+		.info {
+			border-color: $black;
+		}
+	}
+}					
+}
+}	

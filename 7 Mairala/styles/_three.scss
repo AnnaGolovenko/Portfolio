@@ -1,0 +1,25 @@
+.section-three {
+	background-color: $white;
+	@extend %sectionSubheader;
+	.header {
+		color: $brown;
+		text-align: center;
+	}
+	.descr {
+		color: $greyDark;
+		text-align: center;
+	}
+	.services-container {
+		text-align: center;
+		@include paddingTB(2.6em, 4.6em);
+		.services-header {
+			text-transform: uppercase;
+			font-size: 1.125em;
+			color: $brown;
+		}
+		.services-par {
+			font-size: 1em;
+			color: $greyLight;
+		}
+	}
+}

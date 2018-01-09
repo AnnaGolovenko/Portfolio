@@ -7,83 +7,89 @@
 		span {
 			color: $yellow;
 		}
-	}
-	img {
-		margin: 0 auto;
-	}
-	.name {
-		font: {
-			size: 3rem;
-			weight: 800;
+	
+		img {
+			margin: 2.1em auto 0 auto;
 		}
-		text-align: center;
-		color: $yellow;
-	}
-
-	.profession {
-		font: {
-			size: 2.2rem;
-			weight: 400;
+		.name {
+			font: {
+				size: 3rem;
+				weight: 800;
+			}
+			text-align: center;
+			color: $yellow;
 		}
-		text-align: center;
-		margin-bottom: 135px;
-	}
-	.citata::before {
-		content: '“';
-		position: absolute;
-		top: 30px;
-		left: -45px;
-		font: 700 6em/0 'Libre Baskerville', serif;
-	}
 
-	.citata::after {
-		content: '”';
-		position: absolute;
-		bottom: -75px;
-		right: -15px;
-		font: 700 6em/0 'Libre Baskerville', serif;
-	}
-
-	.citata {
-		position: relative;
-		@include paddingLR(20px, 20px);
-		@media (min-width: 1200px) {
-			@include paddingLR(0, 0);
+		.profession {
+			font: {
+				size: 2.2rem;
+				weight: 400;
+			}
+			text-align: center;
+			margin-bottom: 135px;
 		}
-	}
-
-	/* **************Media (laptop) ******************/
-	@include laptop {
-		.citata::before, .citata::after {
-			font-size: 5em;
-		} 
 		.citata::before {
-			left: -10px;
+			content: '“';
+			position: absolute;
+			top: 30px;
+			left: -45px;
+			font: 700 6em/0 'Libre Baskerville', serif;
 		}
 
 		.citata::after {
-			right: 45px;
+			content: '”';
+			position: absolute;
+			bottom: -75px;
+			right: -15px;
+			font: 700 6em/0 'Libre Baskerville', serif;
 		}
+
+		.citata {
+			position: relative;
+			@include paddingLR(20px, 20px);
+			@media (min-width: 1200px) {
+			@include paddingLR(0, 0);
+		}
+	}
+}
+
+	/* **************Media (laptop) ******************/
+	@include laptop {
+		.section-top {
+			.citata::before, .citata::after {
+				font-size: 5em;
+			} 
+			.citata::before {
+				left: -10px;
+			}
+
+			.citata::after {
+				right: 45px;
+			}
+		}	
 	}	
 
 	/* **************Media (tablet) ******************/
 	@include tablet {
-		.citata::before, .citata::after {
-			font-size: 4em;
-		} 
+		.section-top {
+			.citata::before, .citata::after {
+				font-size: 4em;
+			} 
+		}	
 	}
 
 	/* **************Media (phone) ******************/
 	@include phone {
-		.citata {
-			@include paddingLR(20px, 20px);
-		}
-		.citata::before, .citata::after {
-			display: none;		
-		}
-		.profession {
-			margin-bottom: 65px;
-		}
-
+		.section-top {
+			.citata {
+				@include paddingLR(20px, 20px);
+			}
+			.citata::before, .citata::after {
+				display: none;		
+			}
+			.profession {
+				margin-bottom: 2em;
+			}
+		}	
 	}
 }	

@@ -1,0 +1,161 @@
+$white: #fff;
+$black: #000;
+$blue: #29c5f2;
+$brown: #7b6c63;
+$brownDark: #272420;
+$greyDark: #303030;
+$greyDark1: #222222;
+$greyDark2: #1c1c1c;
+$greyDark3: #1a1a1a;
+$greyLight: #949494;
+$greyLight2: #f5f5f5;
+$greyLight3: #e4e4e4;
+
+@mixin marginLR($marginL, $marginR) {
+ 	margin-left: $marginL;
+ 	margin-right: $marginR;
+ }
+
+ @mixin marginTB($marginT, $marginB) {
+ 	margin-top: $marginT;
+ 	margin-bottom: $marginB;
+ }
+
+ @mixin paddingLR($paddingL, $paddingR) {
+ 	padding-left: $paddingL;
+ 	padding-right: $paddingR;
+ } 
+
+ @mixin paddingTB($paddingT, $paddingB) {
+ 	padding-top: $paddingT;
+ 	padding-bottom: $paddingB;
+ } 
+
+
+@mixin laptop {
+	@media (min-width: 992px) and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: 769px) and (max-width: 991px) {
+		@content;
+	}
+}
+
+ @mixin phone {
+	@media (min-width: 320px) and (max-width: 768px) {
+		@content;
+	}
+}
+
+ @mixin borderBottom($color, $width) {
+ 	&::after {
+		content:'';
+		width: $width;
+		height: 6px;
+		display: block;
+		background-color: $color;
+		margin: 0 auto;
+		margin-top: 1em;
+	}	
+ }
+
+%button {
+	font-size: 1em;
+	color: $black;
+	text-transform: uppercase;
+	border: 3px solid $black;
+	padding: 1.25em 2.8em;
+	background: transparent;
+	border-radius: 0;
+	&:hover {
+		cursor: pointer;
+	}
+	a {
+		color: $black;
+	}
+}
+
+ %sectionHeader {
+ 	.header {
+ 		display: inline-block;
+ 		font-size: 2.5em;
+ 		color: $brown;
+ 		text-align: center;
+ 		text-transform: uppercase;
+ 		margin-top: 2.2em;
+ 		@include borderBottom($brown, 20%);
+ 	}
+ 	.descr {
+ 		font-size: 1.125em;
+ 		color: $greyDark;
+ 		text-align: center;
+ 		@include marginTB(2.5em, 5.5em);
+ 	} 
+ }
+
+ %sectionSubheader {
+ 	.header {
+ 		font-size: 1.5em;
+ 		text-transform: uppercase;
+ 		@include marginTB(3.75em, 1.6em);
+ 		@include phone {
+ 			@include marginTB(1.75em, 0.6em)
+ 		}
+ 	}
+ 	.descr {
+ 		font-size: 1em;
+ 		margin-bottom: 3em;
+ 	}
+ }
+
+
+
+/* *******General styles ********/
+html, body {
+	font-size: 16px; 
+	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
+	@include laptop {
+		font-size: 15px;
+	}
+	@include tablet {
+		font-size: 15px;
+	}
+	@include phone {
+		font-size: 16px;
+	}
+}
+
+body {
+	position: relative;
+}
+.section-one, .section-five, .section-eight, .section-ten, .section-eleven {
+	padding-top: 75px;
+	@include tablet {
+		padding-top: 0;
+	}
+	@include phone {
+		padding-top: 0;
+	}
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.block-right {
+	float: right;
+}
+
+
+
+

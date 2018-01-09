@@ -1,0 +1,9 @@
+.footer {
+	background-color: $greyDark2;
+	.copyrights {
+		color: $greyLight;
+		text-align: center;
+		font-size: 1em;
+		@include marginTB(2em, 1em);
+	}
+}

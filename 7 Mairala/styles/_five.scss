@@ -1,0 +1,74 @@
+.section-five {
+	background-color: $white;
+	.container {
+		text-align: center;
+		@extend %sectionHeader;	
+	}
+	.section-container {
+		.photo-container {
+			.img-container {
+				width: 25%;
+				float: left;
+				position: relative;
+				@include tablet {
+					width: 50%;
+				}
+				@include phone {
+					width: 100%;
+				}
+					.image {
+						width: 100%;
+					}
+					.overlay {
+						display: none;
+					}
+				&:hover {
+					.overlay {
+						display: block;
+						position: absolute;
+						top: 5%;
+						left: 5%;
+						width: 90%;
+						height: 90%; 
+						background-color: rgba(0,0,0, .7);
+						cursor: pointer;
+						text-align: center;
+						transition: .5s ease;
+						.header {
+							text-transform: uppercase;
+							font-size: 1.125em;
+							color: $white;
+							transition: .8s ease;
+								@include borderBottom($white, 20%);
+								@include marginTB(3em, 1em);
+								@include tablet {
+									font-size: 1.5em;
+									@include marginTB(3.5em, 1em);
+								}
+								@include phone {
+									font-size: 1.5em;
+									@include marginTB(20%, 1em);
+								}
+							}
+						.descr {
+							font-size: 0.875em;
+							text-transform: uppercase;
+							color: $white;
+							margin-top: 25px;
+							transition: .8s ease;
+								@include marginTB(0, 3em);
+								@include tablet {
+									font-size: 1em;
+									@include marginTB(0, 3.5em);
+								}
+								@include phone {
+									font-size: 1em;
+									@include marginTB(0, 20%);
+								}
+						}
+					}
+				}	
+			} 
+		}
+	}			
+}
