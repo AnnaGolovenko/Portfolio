@@ -45,7 +45,7 @@
 			float: none;
 			text-align: center;
 			.nav-item {
-				@include paddingLR (2em, 1.5em);	
+				@include paddingLR (2em, 1em);	
 			}
 		}
 	}		
@@ -53,26 +53,39 @@
 	@include phone {
 		position: static;
 		.logo {
-			@include marginLR(auto, auto);
+			margin-bottom: 2.3em;
+			margin-left: 1.5em;
 		}
-		.list-menu {
-			float: none;
-			text-align: center;
-			.nav-item {
-				display: inline-block;
-				width: 100%;
-				@include paddingTB (0, 0);
-				.menu-item {
-				&:hover {
-					@include borderBottom($brown, 25%);
-				}
-				&:active {
-					@include borderBottom($brown, 25%);
-				}
-				&:focus {
-					@include borderBottom($brown, 25%);
-				}
+		.navbar-btn {
+			@include marginTB(0, 0);
+			.hamburger-container {
+				color: $white;
+				font-size: 2.3em;
+				border: 1px solid $white;
+				border-radius: 5px;
+				@include paddingLR(10px, 10px);
+				@include marginTB(20px, 10px);
+			}
+		}	
+		#hamburger-menu {
+			box-shadow: none;
+			.list-menu {
+				float: none;
+				text-align: center;
+				.nav-item {
+					display: inline-block;
+					width: 100%;
+					@include paddingTB (0, 0);
+					.menu-item {
+						line-height: 0;
+					&:active {
+						@include borderBottom($brown, 15%);
+					}
+					&:focus {
+						@include borderBottom($brown, 15%);
+					}
 
+					}
 				}
 			}
 		}		

@@ -30,6 +30,7 @@
 				margin-bottom: 3.1em;
 				.form-message {
 					width: 100%;
+					line-height: 0.5;
 					background-color: $greyLight2;
 					border: none;
 					border-bottom: 4px solid $black;
@@ -43,11 +44,9 @@
 			}
 		.btn-container {	
 			margin-bottom: 5.1em;
-				.btn {
-					.submit {
-						@extend %button;
+				.submit {
+					@extend %button;
 
-					}
 				}
 			}
 		}	

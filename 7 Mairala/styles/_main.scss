@@ -21,11 +21,9 @@
 			@extend %button;
 			border: 3px solid $brownDark;
 			background-color: $brownDark;
-			a {
-				color: $white;
-				i {
-					padding-left: 1em;
-				}
+			color: $white;
+			i {
+				padding-left: 1em;
 			}
 		}	
 	}
