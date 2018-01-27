@@ -1,0 +1,103 @@
+.sect-three {
+   position: relative;
+   .center {
+      .slick-slide {
+        position: relative;
+        .slide-img{
+          display: block;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          left:0;
+          padding: 20%;
+          width: 100%;
+          height: 100%;
+          color: $white;
+          opacity: 0;
+          transition: opacity .5s ease;
+          background-color: rgba(0,0,0,.5);
+        .overlay-header {
+          @extend %subheader;
+        } 
+        .overlay-descr {
+          @extend %lightText;
+          @extend %smallText;
+        }
+        .overlay-btn-container {
+          .overlay-btn {
+            @extend %button;
+            }
+          }
+        }
+        &:hover { 
+          cursor: pointer;
+          .overlay {
+              opacity: 1;
+              z-index: 2;
+            }
+        }
+      }      
+    }
+   /* Arrow controls */
+   .paginator {
+    li {
+      position: absolute;
+      top: 37%;
+      display: block;
+      height: 58px;
+      width: 58px;
+      &:hover {
+        cursor: pointer;
+      }
+      &.prev {
+        left: 0;
+        background: url(../img/three/arrow-btn-left.png) no-repeat;
+      }
+      &.next {
+        right: 0;
+        background: url(../img/three/arrow-btn-right.png) no-repeat;
+      }
+    }
+   }
+
+   @include lg {
+      .center {
+        .slick-slide {
+          .overlay {
+            padding: 10%;
+          }
+        }
+      }     
+   }
+
+ @include md {
+      .center {
+        .slick-slide {
+          .overlay {
+            padding: 7%;
+          }
+        }
+      }     
+   } 
+
+   @include sm {
+    .center {
+      .slick-slide {
+        .overlay {
+          padding: 7%;
+        }
+      }
+    }     
+   } 
+
+   @include xs {
+    .center {
+      .slick-slide {
+        .overlay {
+          padding: 10%;
+        }
+      }
+    }     
+   } 
+}         

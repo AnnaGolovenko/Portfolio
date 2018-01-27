@@ -1,0 +1,100 @@
+.sect-main {
+	background-image: url(../img/main/main-bg.jpg);
+	background-size: cover;
+	.header {
+		.menu-nav {
+			display: flex;
+			justify-content: flex-end;
+			.nav-item {
+				.nav-link {
+					color: $black;
+					@extend %regularText;
+				}
+				.contact {
+					border: 1px solid $black;
+					border-radius: 1.4rem;
+				}
+			}
+		}
+	}	
+	.main-header {
+		text-align: center;
+		color: $black;
+		@extend %boldText;
+		@extend %header;
+		margin-top: 11.1rem;
+	}
+	.main-descr {
+		text-align: center;
+		color: $grey;
+		@extend %lightText;
+	}
+	.price-btn-container {
+		padding-top: 3.6rem;
+		padding-bottom: 23.2rem;
+		.price-btn {
+			@extend %button;
+		}
+	}
+	.scroll-container {
+		.scroll-descr {
+			@extend %lightText;
+			@extend %smallText;
+			padding-bottom: 5.55rem;
+		}
+		.scroll-down {
+			color: $white;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	@include md {
+		.header {
+			text-align: center;
+			.menu-nav {
+				justify-content: center;
+			}		
+		}
+	}
+	@include sm{
+		.header {
+			text-align: center;
+			.menu-nav {
+				justify-content: center;
+			}		
+		}
+		.main-header {
+			/* margin-top: 8rem; */
+		}
+		.price-btn-container {
+			padding-bottom: 13.2rem;
+		}
+	}
+
+	@include xs {
+		.header {
+			text-align: center;
+			.menu-nav {
+				justify-content: center;
+				.hamburger {
+					&:focus{
+						outline-color: $black;
+					}
+				}
+				.nav {
+					flex-direction: column;
+					.nav-item {
+						align-items: center;
+					}
+				}
+			}
+		}
+	.main-header {
+			margin-top: 4rem;
+		}
+		.price-btn-container {
+			padding-bottom: 6.2rem;
+		}
+	}
+}

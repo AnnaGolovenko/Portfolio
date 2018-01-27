@@ -1,0 +1,68 @@
+.sect-two {
+	background-color: $white;
+	.sect-two-header {
+		color: $black;
+		@extend %boldText;
+		@extend %header;
+	}
+	.services {
+		.services-img {
+			height: 125px;
+		}
+		.services-header {
+			@extend %boldText;
+			@extend %subheader;
+			color: $black;
+		}
+		.services-descr {
+			color: $grey;
+			@extend %smallText;
+		}
+	}
+	.services-web-design, .services-digital {
+		padding-right: 15px;
+	}
+	.services-web-app, .services-desktop-app {
+		padding-left: 15px;
+	}
+	.price-btn-container {
+		padding-top: 5rem;
+		padding-bottom: 5.55rem;
+
+		.price-btn {
+			@extend %button;
+		}
+	}
+
+	@include xl {
+		.services-web-design, .services-digital {
+			padding-right: 4.44rem;
+
+		}
+		.services-web-app, .services-desktop-app {
+			padding-left: 4.44rem;
+		}	
+	}
+
+	@include md {
+		.services {
+			text-align: center;
+		}
+	}
+	@include sm{
+		.price-btn-container {
+			padding-top: 3rem;
+			padding-bottom: 4.55rem;	
+		}
+	}
+
+	@include xs {
+		.services {
+			text-align: center;
+		}
+		.price-btn-container {
+			padding-top: 3rem;
+			padding-bottom: 3.55rem;	
+		}	
+	}	
+}

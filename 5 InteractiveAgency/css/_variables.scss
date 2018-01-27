@@ -1,0 +1,119 @@
+/* Colors */
+$black: #000;
+$white: #fff;
+$grey: #a7acbc;
+$pink: #bb0085;
+$purple: #49007c;
+
+
+
+%gradient {
+	background: -moz-linear-gradient(16deg, $purple , $pink);
+	background: -webkit-linear-gradient(16deg, $purple , $pink);
+	background: -ms-linear-gradient(16deg, $purple , $pink);
+	background: linear-gradient(16deg, $purple , $pink);
+}
+
+%gradientHover {
+	background: -moz-linear-gradient(16deg, $pink, $purple);
+	background: -webkit-linear-gradient(16deg, $pink, $purple);
+	background: -ms-linear-gradient(16deg, $pink, $purple);
+	background: linear-gradient(16deg, $pink, $purple);
+	transition: background 0.7s;
+}
+
+%boldText {
+	font-family: 'Proxima Nova Bd', sans-serif;
+}
+
+%regularText {
+	font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+%lightText {
+	font-family: 'Proxima Nova Lt', sans-serif;
+}
+
+%header {
+	font-size: 2.6rem;
+}
+ 
+%subheader {
+	font-size: 1.6rem;
+} 
+
+%smallText {
+	font-size: 0.77rem;
+}
+
+%paddingColumnRight {
+	padding-right: 4.44rem;
+}
+
+%paddingColumnLeft {
+	padding-left: 4.44rem;
+}
+
+%button {
+  width: 205px;
+  padding: 0.88rem 2.88rem;
+  border-radius: 1.7rem;
+  color: $white;
+  @extend %gradient;
+  @extend %regularText;
+  &:hover {
+  	@extend %gradientHover;
+  }
+  &:active {
+  	border-color: transparent;
+  }
+  &:focus {
+  	border-color: transparent;
+  }
+}
+
+
+
+/*Media queries*/
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: 320px) and (max-width: 575px) {
+    @content;
+  }
+}
+
+/* General styles */
+html {
+	font-size: 18px;
+}
+
+.container {
+	@include xl {
+	width: 1353px;
+	}
+}	
+
+

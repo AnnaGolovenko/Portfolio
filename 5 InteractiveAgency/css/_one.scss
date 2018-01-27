@@ -1,0 +1,91 @@
+.sect-one {
+	background-color: $white;
+	.best-block {
+		padding-top: 8.3rem;
+		padding-bottom: 8.3rem;
+		color: $white;
+		@extend %lightText;
+		.best-header {
+			@extend %header;
+			.best-item {
+				@extend %boldText;
+			}
+		}
+		.price-btn-container {
+			padding-top: 2.2rem;
+			padding-bottom: 7.7rem;
+			.price-btn {
+				@extend %button;
+			}
+		}
+	}
+	.best-design {
+		background: url(../img/one/left-bg.jpg) center center no-repeat;
+		background-size: cover;
+		@extend %paddingColumnRight;
+	}
+	.best-code {
+		background: url(../img/one/right-bg.jpg) center center no-repeat;
+		background-size: cover;
+		@extend %paddingColumnLeft;
+	}
+
+	@include md {
+		.best-block {
+			padding-top: 6.3rem;
+			padding-bottom: 6.3rem;
+			text-align: center;
+			.price-btn-container {
+				padding-top: 2.2rem;
+				padding-bottom: 3.7rem;
+			}
+		}
+		.best-design {
+			padding-right: 15px;
+			padding-left: 15px;
+		}	
+		.best-code {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+	@include sm{
+		.best-block {
+			padding-top: 6.3rem;
+			padding-bottom: 3.3rem;
+			text-align: center;
+			.price-btn-container {
+				padding-top: 2.2rem;
+				padding-bottom: 3.7rem;
+			}
+		}
+		.best-design {
+			padding-right: 15px;
+			padding-left: 15px;
+		}	
+		.best-code {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+
+	@include xs {
+		.best-block {
+			padding-top: 3.3rem;
+			padding-bottom: 1.3rem;
+			text-align: center;
+			.price-btn-container {
+				padding-top: 2.2rem;
+				padding-bottom: 3.7rem;
+			}
+		}
+		.best-design {
+			padding-right: 15px;
+			padding-left: 15px;
+		}	
+		.best-code {
+			padding-right: 15px;
+			padding-left: 15px;
+		}	
+	}
+}

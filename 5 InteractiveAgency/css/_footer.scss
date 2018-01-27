@@ -1,0 +1,14 @@
+.footer {
+	background-color: $white;
+	.footer-descr {
+		color: $grey;
+		@extend %lightText;
+		.footer-descr-bold {
+			@extend %boldText;
+			color: $grey;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
